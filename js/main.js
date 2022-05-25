@@ -61,3 +61,20 @@ return name.length
 }
 console.log (unusualFive ('seven'))
 
+
+
+function hello(name){
+    return name? `Hello, ${name[0].toUpperCase() + name.slice(1).toLowerCase()}!` : `Hello, World!`
+}
+console.log(hello('johN'));
+
+function noBoringZeroes(n){
+    do{
+        n/=10
+    }
+while(n%10 ==0 && n!=0)
+return n
+}
+console.log(noBoringZeroes(1200));
+console.log(noBoringZeroes(456800000));
+console.log(noBoringZeroes(0));
